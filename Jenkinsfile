@@ -13,8 +13,8 @@ pipeline {
 							-o './'
 							-s './'
 							-f 'ALL'
-							--prettyPrint''', 
-							'--format HTML --format XML --suppression suppression.xml',
+							--prettyPrint 
+							--format HTML --format XML --suppression suppression.xml''',
 							odcInstallation: 'OWASP Dependency-Check Vulnerabilities'
 				
 				dependencyCheckPublisher pattern: 'dependency-check-report.xml'
